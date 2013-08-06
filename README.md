@@ -22,14 +22,14 @@ Pour la réalisation de cette dernière, les sources de données que nous avons 
 * Ecran après sélection d'un élément précis, description de l'élément (ex. vitamine, origine, etc.)
 ![Ecran après sélection d'un élément précis, description de l'élément (ex. vitamine, origine, etc.) ](http://aia.netne.net/fruitsecretimg/IM2.jpg)
 
-**Testeurs 1**
+**Testeur 1**
 * Nom : Amadou Babacar Ndiaye
 * Model : BlackBerry 8900
 * Numéro : 776590346
 * Système : blackberry 4.6
 * Email : amadoubabacar.ndiaye@univ-zig.sn
 
-**Testeurs 2**
+**Testeur 2**
 * Nom : Farias Zamor
 * Model : Alcatel OneTouch 4010X
 * Numéro : 770225331
