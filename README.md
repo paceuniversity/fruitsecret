@@ -10,7 +10,28 @@ Pour la réalisation de cette dernière, les sources de données que nous avons 
 * Wikipedia
 * google
 
-** Design **
+
+**documents**
+* des documents sur la santé naturelle
+
+**Design**
+* Ecran principal de l'application
 ![Ecran principal de l'application ](http://aia.netne.net/fruitsecretimg/IM0.jpg)
-![Ecran après sélection d'une catégorie et selection d'un élément précis (ex. Abricot ](http://aia.netne.net/fruitsecretimg/IM1.jpg)
-![Ecran après sélection d'un élément précis, description de l'élément (ex. vitamine, origine, etc. ](http://aia.netne.net/fruitsecretimg/IM0.jpg)
+* Ecran après sélection d'une catégorie et selection d'un élément précis (ex. Abricot)
+![Ecran après sélection d'une catégorie et selection d'un élément précis (ex. Abricot) ](http://aia.netne.net/fruitsecretimg/IM1.jpg)
+* Ecran après sélection d'un élément précis, description de l'élément (ex. vitamine, origine, etc.)
+![Ecran après sélection d'un élément précis, description de l'élément (ex. vitamine, origine, etc.) ](http://aia.netne.net/fruitsecretimg/IM2.jpg)
+
+**Testeurs 1**
+* Nom : Amadou Babacar Ndiaye
+* Model : BlackBerry 8900
+* Numéro : 776590346
+* Système : blackberry 4.6
+* Email : amadoubabacar.ndiaye@univ-zig.sn
+
+**Testeurs 2**
+* Nom : Farias Zamor
+* Model : Alcatel OneTouch 4010X
+* Numéro : 770225331
+* Système : GINGERBREAD 2.3.6
+* Email : f.zamor1911@zig.univ.sn
