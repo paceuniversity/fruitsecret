@@ -14,14 +14,6 @@ Pour la réalisation de cette dernière, les sources de données que nous avons 
 **documents**
 * des documents sur la santé naturelle
 
-**Design**
-* Ecran principal de l'application
-![Ecran principal de l'application ](http://aia.netne.net/fruitsecretimg/IM0.jpg)
-* Ecran après sélection d'une catégorie et selection d'un élément précis (ex. Abricot)
-![Ecran après sélection d'une catégorie et selection d'un élément précis (ex. Abricot) ](http://aia.netne.net/fruitsecretimg/IM1.jpg)
-* Ecran après sélection d'un élément précis, description de l'élément (ex. vitamine, origine, etc.)
-![Ecran après sélection d'un élément précis, description de l'élément (ex. vitamine, origine, etc.) ](http://aia.netne.net/fruitsecretimg/IM2.jpg)
-
 **Testeur 1**
 * Nom : Amadou Babacar Ndiaye
 * Model : BlackBerry 8900
