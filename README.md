@@ -15,11 +15,11 @@ Pour la réalisation de cette dernière, les sources de données que nous avons 
 * des documents sur la santé naturelle
 
 **Testeur 1**
-* Nom : Amadou Babacar Ndiaye
-* Model : BlackBerry 8900
-* Numéro : 776590346
-* Système : blackberry 4.6
-* Email : amadoubabacar.ndiaye@univ-zig.sn
+* Nom : Carlos Saturné
+* Model : Alcatel OneTouch 4010X
+* Numéro : 773606698
+* Système : GINGERBREAD 2.3.6
+* Email : c.saturne1951@zig.univ.sn
 
 **Testeur 2**
 * Nom : Farias Zamor
