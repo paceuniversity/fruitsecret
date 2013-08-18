@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html class="ui-mobile-rendering">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/jquery.mobile-1.0.1.min.css"/>
+
+    <!-- The Scripts -->
+    <script src="./lib/jquery.js"></script>
+    <script src="./lib/jquerymobile.js"></script>
+    <style>
+        #header{
+            margin:auto;
+            width:280px
+        }
+        #cat{
+            background:silver; 
+            text-align:center; 
+            padding:2px;
+            font-family:tahoma;
+        }
+        p{
+            text-align: justify; text-justify: newspaper;
+        }
+    </style>
+    <!--style> #nav{height:41px; background:gray} li{list-style:none; display:inline; margin:0px; padding:0px;} li a{padding:9px; position:relative; top:9px; text-decoration:none; font-family:tahoma; font-size:14pt; color:#FFF} li a:hover{background:#FFF; color:gray}</style-->
+</head>
+
+<body>
+    <!--div id="nav"> <ul> <li><a href="">Accueil</a></li> <li><a href="">Inscription</a></li> </ul> </div-->
+    <!-- La page d'accueil de l'application -->
+    <div data-role="page" id="pg_principal" data-title="Menu principal">
+        <div data-role="header" data-theme="c">
+            <div id="header">
+                <img src="./css/images/background.png">
+            </div>
+        </div>
+        <div data-role="content" data-theme="c" style="background:#fff">
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <div id="cat">Fruit</div>
+                    <a href="#catFruit">
+                        <div style="text-align:center">
+                            <img src="./css/images/icon_fruit.png">
+                        </div>
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                    <div id="cat">Apport</div>
+                    <a href="#catApport">
+                        <div style="text-align:center">
+                            <img src="./css/images/icon_disease.png">
+                        </div>
+                    </a>
+                </div>
+                <div class="ui-block-a">
+                    <div id="cat">Vitamines</div>
+                    <a href="#catVitamin">
+                        <div style="text-align:center">
+                            <img src="./css/images/icon_vitamin.png">
+                        </div>
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                    <div id="cat">Origine</div>
+                    <a href="#catOrigine">
+                        <div style="text-align:center">
+                            <img src="./css/images/icon_origin.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>       
+        <div data-role="footer" data-theme="c" data-position="fixed" data-id="foot">
+            <h2>
+                Copyright
+            </h2>
+        </div>
+    </div>
+    
+    <!-- La page de la categorie fruits -->
+    <div data-role="page" id="catFruit" data-title="Categorie de fruits">
+        <div data-role="header" data-theme="c">
+            <h2>Cat&eacute;gorie Fruits</h2>
+        </div>
+        <div data-role="content" data-theme="c">
+            <ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#abricot">Abricot</a></li>
+                <li><a href="#">Ananas</a></li>
+                <li><a href="#">Avocat</a></li>
+                <li><a href="#">Mangue</a></li>
+                <li><a href="#">Melon</a></li>
+                <li><a href="#">Panplemousse</a></li>
+                <li><a href="#">Pomme</a></li>
+                <li><a href="#">Pomme de cajout</a></li>
+                <li><a href="#">Papaye</a></li>
+                <li><a href="#">Saba Senegalansis</a></li>
+            </ul>
+        </div> 
+        <div data-role="footer" data-theme="c" data-position="fixed" data-id="foot">
+            <div data-role="navbar" data-iconpos="bottom">
+                <ul>
+                    <li><a href="#pg_principal" data-role="button" data-icon="home">Menu</a></li>
+                    <li><a href="#catVitamine" data-role="button" data-icon="bars">Vitamine</a></li>
+                    <li><a href="#catApport" data-role="button" data-icon="bars">Apport</a></li>
+                    <li><a href="#catOrigine" data-role="button" data-icon="bars">Origine</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- La page de la categorie Vitamines -->
+    <div data-role="page" id="catVitamin" data-title="Categorie de Vitamines">
+        <div data-role="header" data-theme="c">
+            <h2>Cat&eacute;gorie Vitamines</h2>
+        </div>
+        <div data-role="content" data-theme="c">
+            <ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#">Vitamine A</a></li>
+                <li><a href="#">Vitamine B</a></li>
+                <li><a href="#">Vitamine C</a></li>
+                <li><a href="#">Vitamine D</a></li>
+                <li><a href="#">Vitamine E</a></li>
+            </ul>
+        </div> 
+        <div data-role="footer" data-theme="c" data-position="fixed" data-id="foot">
+            <div data-role="navbar" data-iconpos="bottom">
+                <ul>
+                    <li><a href="#pg_principal" data-role="button" data-icon="home">Menu</a></li>
+                    <li><a href="#catFruit" data-role="button" data-icon="bars">Fruit</a></li>
+                    <li><a href="#catApport" data-role="button" data-icon="bars">Apport</a></li>
+                    <li><a href="#catOrigine" data-role="button" data-icon="bars">Origine</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- La page de la categorie Apports -->
+    <div data-role="page" id="catApport" data-title="Categorie d'apports">
+        <div data-role="header" data-theme="c">
+            <h2>Cat&eacute;gorie Apports</h2>
+        </div>
+        <div data-role="content" data-theme="c">
+            <ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#">Anémie</a></li>
+                <li><a href="#">Asthme</a></li>
+                <li><a href="#">Bronchite</a></li>
+                <li><a href="#">Obésité</a></li>
+                <li><a href="#">Cancer</a></li>
+                <li><a href="#">Migraine</a></li>
+                <li><a href="#">Trouble visuel</a></li>
+            </ul>
+        </div> 
+        <div data-role="footer" data-theme="c" data-position="fixed" data-id="foot">
+            <div data-role="navbar" data-iconpos="bottom">
+                <ul>
+                    <li><a href="#pg_principal" data-role="button" data-icon="home">Menu</a></li>
+                    <li><a href="#catFruit" data-role="button" data-icon="bars">Fruit</a></li>
+                    <li><a href="#catVitamine" data-role="button" data-icon="bars">Vitamine</a></li>
+                    <li><a href="#catOrigine" data-role="button" data-icon="bars">Origine</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- La page de la categorie Origines -->
+    <div data-role="page" id="catOrigine" data-title="Categorie d'origines">
+        <div data-role="header" data-theme="c">
+            <h2>Cat&eacute;gorie Origine</h2>
+        </div>
+        <div data-role="content" data-theme="c">
+            <ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#">Afrique</a></li>
+                <li><a href="#">Amerique</a></li>
+                <li><a href="#">Asie</a></li>
+                <li><a href="#">Caraïbes</a></li>
+                <li><a href="#">Europe</a></li>
+            </ul>
+        </div> 
+        <div data-role="footer" data-theme="c" data-position="fixed" data-id="foot">
+            <div data-role="navbar" data-iconpos="bottom">
+                <ul>
+                    <li><a href="#pg_principal" data-role="button"  data-icon="home">Menu</a></li>
+                    <li><a href="#catFruit" data-role="button" data-icon="bars">Fruit</a></li>
+                    <li><a href="#catApport" data-role="button" data-icon="bars">Apport</a></li>
+                    <li><a href="#catVitamin" data-role="button" data-icon="bars">Vitamine</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div data-role="page" id="abricot">
+        <div data-role="header" data-theme="c">
+            <h2>Abricot</h2>
+        </div>
+        <div data-role="content" data-theme="c">
+            <div data-role="collapsible" data-mini="true"  data-collapsed="false" data-content-theme="c"> 
+                <h3>Origine</h3> 
+                <p>
+                    <a href="#im_abricot" data-rel="dialog"><img src="./css/images/abricot_fruit.jpg" style="float:left; width:95px; margin:0px 5px 2px 0px;"></a>
+                    L'abricot et la pêche sont les deux fruits à noyaux du genre Prunus originaires de Chine. L'abricot est le fruit d'un arbre généralement de petite taille appelé abricotier, de la famille des Rosaceae. Le nom scientifique de l'abricotier est Prunus armeniaca (prune d'Arménie). Il appartient au sous-genre des Prunus, section Armeniaca avec les quatre autres abricotiers du monde. La Turquie est le principal producteur d'Abricot.
+                </p> 
+            </div>
+            <div data-role="collapsible" data-mini="true"  data-collapsed="false" data-content-theme="c"> 
+                <h3>Vitamine</h3> 
+                <p>
+                    Les abricots sont une bonne source de fibres alimentaires (pectines), de potassium et une très bonne source de bêta-carotène (vitamine A) et de vitamine C14. Les pectines, se gonflent facilement d'eau et confèrent du moelleux à sa chair.<br/>
+                    La vitamine B qu'il contient est dans le fruit sec deux à trois fois plus abondante que dans le fruit frais. En revanche, déshydraté, l'abricot devient très acidifiant et sa couleur orangée est souvent révélatrice d'une adjonction d'anhydride sulfureux (sulfite - dioxyde de soufre : comme conservateur par vaporisation) qui le rend difficile à digérer (l'abricot brunit en séchant normalement)<br/>
+                    Il contient aussi du fer et du potassium alimentaires.<br/>
+                    Sec, il est intéressant dans le cadre d'une activité musculaire élevée, grâce à sa richesse en glucides, sans apporter plus de 30 kcal par fruit.
+                </p> 
+            </div>
+            <div data-role="collapsible" data-mini="true"  data-collapsed="false" data-content-theme="c"> 
+                <h3>Apport et Santé</h3> 
+                <p>
+                    L'amande d'abricot est traditionnellement prescrite contre la toux et la constipation.<br/> 
+                    L'amande d'abricot,  « sert principalement à traiter la toux, à s'opposer au qi ascendant, à traiter les gargouillis tonitruants [de l'intestin], les maux de gorge ».<br/>
+                    L'amande amère d'abricot, semen armeniacae amarum (en chinois xingren 杏仁) est décrite actuellement en médecine chinoise traditionnelle (Chen12, 2003, 2008) comme  :<br/>
+                    goût : amer, sucré, tiède<br/>
+                    affinités pour le méridien des poumons (shoutaiyinfei 手太阴肺) et le méridien du gros intestin (shouyangming dachang 手阳明大肠)<br/>
+                    fonctions :<br/>
+                    - antitussif, anti-asthmatique, dyspnéique<br/>
+                    - laxatif, émolliente des intestins<br/>
+                    indications :<br/>
+                    - bronchite, toux et asthme<br/>
+                    - constipation<br/>
+                    toxicité : l'amygdaline, le composant actif de l'amande amère est très toxique à forte dose.<br/>
+                    En médecine chinoise, l'abricot sec est conseillé pour traiter l'anémie, l'asthme et les sensations de gorge sèche ou de soif.<br/>
+                    L'amande amère d'abricot contient de l'amygdaline13, de l'émulsine, et de nombreuses enzymes (amygdaline, prunase etc.). Elle contient aussi des acides gras (acide oléique, acide linoléique les deux constituents principaux et de l'acide palmitique, stéarique et linolénique), du cholestérol, de l'estrone, alpha-estradiol. L'hydrolyse de l'agmygdaline conduit au benzaldéhyde et à l'acide cyanhydrique.
+                </p> 
+            </div>
+        </div> 
+        <div data-role="footer" data-theme="c" data-position="fixed" data-id="foot">
+            <div data-role="navbar" data-iconpos="bottom">
+                <ul>
+                    <li><a href="#pg_principal" data-role="button" data-icon="home">Menu</a></li>
+                    <li><a href="#catVitamin" data-role="button" data-icon="bars">Vitamine</a></li>
+                    <li><a href="#catApport" data-role="button" data-icon="bars">Apport</a></li>
+                    <li><a href="#catOrigine" data-role="button" data-icon="bars">Origine</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" id="im_abricot">
+        <div data-role="header" data-theme="c">
+            <h2>Abricotier</h2>
+        </div>
+        <div data-role="content" data-theme="c">
+            <p>
+                <img src="./css/images/abricot_fruit.jpg"/>
+            </p>
+            <p>
+                Le nom scientifique de l'abricotier est Prunus armeniaca (prune d'Arménie)
+            </p> 
+        </div> 
+        <div data-role="footer" data-theme="c" data-position="fixed" data-id="foot">
+            
+        </div>
+    </div>   
+</body>
+</html>
