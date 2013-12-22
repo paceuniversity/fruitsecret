@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="fr" class="ui-mobile-rendering">
+<head>
+    <title>Menu</title> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="stylesheet" href="lib/jquery.mobile-1.3.2.min.css"/>
+    <link rel="stylesheet" href="lib/splashscreen.css"/>
+    <script src="lib/jquery-1.9.1.min.js"></script>
+    <script src="lib/jquery.mobile-1.3.2.min.js"></script>
+    <style>
+        p{
+            font-size:10pt;
+            text-align:justify;
+        }
+		p img{
+			float:left;
+			margin:0px 3px 0px 0px;
+		}
+    </style>
+</head>
+
+<body>
+    <div data-role="page" id="pg_principal" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <div id="header" style="text-align:center">
+                <img src="./images/background.png">
+            </div>
+        </div>
+        <div data-role="content">
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <div class="box">
+                        <div id="title">Fruits</div>
+                        <a href="#catFruit">
+                            <img src="./images/icone_fruit.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="ui-block-b">
+                    <div class="box">
+                        <div id="title">Soins</div>
+                        <a href="#catSoin">
+                            <img src="./images/icon_sante.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="ui-block-a">
+                    <div class="box">
+                        <div id="title">Vitamines</div>
+                        <a href="#catVitamine">
+                            <img src="./images/icone_vitamine.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="ui-block-b">
+                    <div class="box">
+                        <div id="title">A propos</div>
+                        <a href="#catApropos" rel="dialog">
+                            <img src="./images/icone_a_propos.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- categorie des fruits -->
+    <div data-role="page" id="catFruit" data-title="Cat&eacute;gorie fruits" data-theme="d">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <a href="index.html#pg_principal" data-role="button" data-icon="home" data-iconpos="notext">home</a>
+            <h1>Les Fruits</h1>
+            <a href="index.html#catApropos" data-role="button" data-icon="info" data-iconpos="notext">info</a>
+        </div>
+        <div data-role="content">
+           	<ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">       	
+            	<li><a href="#ananas" rel="external">Ananas</a></li>
+                <li><a href="#banane" rel="external">Banane</a></li>
+                <li><a href="#cerise" rel="external">Cerise</a></li>
+                <li><a href="#citron" rel="external">Citron</a></li>
+                <li><a href="#coco" rel="external">Noix de coco</a></li>
+                <li><a href="#mangue" rel="external">Mangue</a></li>
+                <li><a href="#orange" rel="external">Orange</a></li>
+                <li><a href="#pomme" rel="external">Pomme</a></li>
+                <li><a href="#raisin" rel="external">Raisin</a></li>
+            </ul>
+        </div> 
+    </div>
+    
+    <!-- categorie des soins -->
+    <div data-role="page" id="catSoin" data-title="Cat&eacute;gorie fruits" data-theme="d">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <a href="index.html#pg_principal" data-role="button" data-icon="home" data-iconpos="notext">home</a>
+            <h1>Les Soins</h1>
+            <a href="index.html#catApropos" data-role="button" data-icon="info" data-iconpos="notext">A propos</a>        
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre soin">
+                <li><a href="#acne" rel="external">Acné</a></li>
+                <li><a href="#alzheimer" rel="external">Alzheimer</a></li>
+                <li><a href="#anemie" rel="external">Anemie</a></li>
+                <li><a href="#cure_de_main" rel="external">Cure de main</a></li>
+                <li><a href="#digestion" rel="external">Problème de digestion</a></li>
+                <li><a href="#mal_de_gorge" rel="external">Mal de gorge</a></li>
+                <li><a href="#tendinite" rel="external">Tendinite</a></li>
+                <li><a href="#voix_enrouee" rel="external">Voix enrouée</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- categorie des vitamines -->
+    <div data-role="page" id="catVitamine" data-title="Cat&eacute;gorie fruits" data-theme="d">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <a href="index.html#pg_principal" data-role="button" data-icon="home" data-iconpos="notext">home</a>
+            <h1>Les Vitamines</h1>
+            <a href="index.html#catApropos" rel="dialog" data-role="button" data-icon="info" data-iconpos="notext">A propos</a>        
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+               	<li><a href="#vitaa" rel="external">A</a></li>
+                <li><a href="#vitaa" rel="external">B</a></li>                
+                <li><a href="#vitab1" rel="external">B1</a></li>
+                <li><a href="#vitab2" rel="external">B2</a></li>
+                <li><a href="#vitab3" rel="external">B3</a></li>
+                <li><a href="#vitab5" rel="external">B5</a></li>
+                <li><a href="#vitab6" rel="external">B6</a></li>
+                <li><a href="#vitab9" rel="external">B9</a></li>                
+                <li><a href="#vitab12" rel="external">B12</a></li>
+                <li><a href="#vitac" rel="external">C</a></li>
+                <li><a href="#vitapp" rel="external">E</a></li>
+                <li><a href="#vitak" rel="external">K</a></li>
+                <li><a href="#vitapp" rel="external">PP</a></li>
+                <li><a href="#carotene" rel="external">β-carot&egrave;ne</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div data-role="page" id="catApropos" data-title="A propos" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <h1>A propos</h1>  
+            <a href="index.html#pg_principal" data-role="button" data-icon="home" data-iconpos="notext">home</a>
+                  
+        </div>
+        <div data-role="content">
+            <p>
+                <strong>Fruit Secret</strong>, est une application jquery mobile, qui a vu le jour dans le cadre d'une comp&eacute;tition organisée par <a href="http://mobilesenegal.org/" rel="external">mobile4senegal</a>. Cette app &agrave; &eacute;t&eacute; d&eacute;velopp&eacute; par trois (2) &eacute;tudiants ha&iuml;tiens et un &eacute;tudiant sénégalais de l'Universit&eacute; Assane Seck de Ziguinchor, S&eacute;n&eacute;gal. C'est une application qui vous permet de mieux se familiariser avec les fruits dont vous c&ocirc;toyez dans vos quotidiens. 
+            </p>
+            <p style="font-size: 9pt">
+                <strong>Auteurs :</strong>
+                <br/>• Menendez NELSON<br/>• G&eacute;rald ADONIS<br/>• Charles Marco Pereira
+            </p>
+            <p style="font-size: 9pt">
+                <strong>Version de l'app : </strong>
+                1 . 0 . 1
+            </p>
+            <p style="font-size: 9pt">
+                <strong>Date de publication : </strong>Janvier 2014
+            </p>
+            <p style="font-size: 9pt">
+                <strong>Contact : </strong>
+                <a href="mailto:menendezon@gmail.com?subject=Message%From%FSecret">menendezon@gmail.com</a>
+            </p>    
+        </div>
+    </div>
+    
+    <!------------------------------------------------>
+    <!----------- fruits ------------->
+    <!------------------------------------------------>
+    
+    <div data-role="page" id="citron" data-title="Cat&eacute;gorie fruits" data-theme="d">
+        <div data-role="content" data-theme="d">
+        	<h1 style="text-align:center; border-bottom:1px solid silver">Le citron</h1>
+        	<h3 id="btn_1">&raquo; Description</h3>
+            <p id="content_1">
+            	<img class="popphoto" src="images/mini/m_citron.jpg" alt="citron" title="citron">
+                Le citron est un agrume, fruit du citronnier. Le citronnier (Citrus limon) est un arbuste de 5 à 10 m de haut, à feuilles persistantes.<br/>
+                Le fruit mûr a une écorce qui va du vert tendre au jaune éclatant sous l'action du froid. La maturité est en fin d'automne et début d'hiver dans l'hémisphère nord. Sa chair est juteuse, acide et riche en vitamine C, ce qui lui vaut - avec sa conservation facile - d'avoir été diffusé sur toute la planète par les navigateurs qui l'utilisent pour prévenir le scorbut. De l'écorce on extrait une huile essentielle qui contient entre autres substances du limonène et du citral.<br/>
+                Les couleurs, arômes, saveurs, degré d'acidité ou sucre, la richesse en huile essentielle varient selon les variétés, les terroirs, les climats, la maturité, l'âge du citronnier et le type de porte-greffe, formant une palette de goûts insoupçonnée.<br/>
+                La diversité des citrons n'est pas reflétée par le catalogue des variétés inscrites. Il existe, du climat méditerranéen aux tropiques, de nombreux cultivars locaux résultant de la reproduction par semis. Ce sont notamment des citrons géants qui ne sont pas commercialisés car pauvres en jus.
+            </p>
+            
+           <h3 id="btn_2">&raquo; Utilisation</h3>
+            <p id="content_2">
+           	Il a de multiples usages en cuisine :<br/>
+              -	le jus frais est utilisé en assaisonnements sur le poisson,<br/>
+              -	le jus avec de la glace est consommé,<br/>
+              -	il remplace le vinaigre dans les salades,<br/>
+              -	il est souvent utilisé sous forme confite dans les tajines marocains,<br/>
+              -	additionné d'eau et de sucre, il compose la citronnade, boisson rafraîchissante,<br/>
+              -	il est également un ingrédient essentiel de la limonade et du limoncello,<br/>
+              -	il est employé en pâtisserie, notamment dans la recette de la tarte au citron.<br/>
+              Le citron peut aussi servir comme détartrant dans un lave-vaisselle, parfumant aussi ce dernier.
+              Le jus de citron :<br/>
+              -	peut s'avérer utile pour le nettoyage d'objets en aluminium, et entre dans la composition de la mixture pour nettoyer les ustensiles en cuivre,<br/>
+              -	peut servir comme encre invisible : il suffit alors de faire chauffer la feuille au-dessus d'une chandelle pour voir apparaître les écritures,<br/>
+              -	a comme effet de blanchir naturellement les dents,<br/>
+              -	mélangé à de l'eau en fait une boisson coupant la soif et également rafraîchissant 
+              </p>
+            <h3 id="btn_3">&raquo; Conseil</h3>
+            <p id="content_3">
+            Il est conseillé de boire une tasse de jus de citron le matin, ça permet de nettoyer le sang et de combattre contre les bactéries.<br/>
+            Une fois épluchés, les fruits et les légumes noircissent au contact de l'air par oxydation. <br/>
+            Pour sauvegarder les vitamines, il suffit de frotter la chair des fruits (pomme, poire, avocats) avec une moitié de citron. Pour les crudités râpées comme le céleri rave, il faut l'arroser de jus de citron.<br/>
+            L'ajout de quelques gouttes de citron ou de vinaigre rend la pâte brisée plus tendre et moins élastique, car l'acide désagrège le gluten (protéine de la farine).
+            </p>
+            <h3 id="btn_4">&raquo; Santé</h3>
+            <p id="content_4">
+            Réputé pour avoir des propriétés antiseptiques, il est utilisé dans de nombreux traitements contre le mal de gorge et permet également de faire des cures pour les mains. Il est de plus utilisé en cosmétologie pour éclaircir et unifier le teint. <br/>
+Son jus est efficace contre les mucosités : du jus de citron dilué dans de l'eau chaude évite d'avoir la voix enrouée. <br/>
+Son taux élevé en vitamine C et ses propriétés antiseptiques font du citron un fruit bien utile pendant l'hiver pour faire face aux infections.<br/>
+Le citron contient de puissants flavonoïdes naturels (antioxydants) qui pourraient jouer un rôle contre les maladies dégénératives du cerveau, comme la maladie d'Alzheimer.
+C'est aussi un fruit diurétique. 
+           	</p>
+            <h3 id="btn_5">&raquo; Pr&eacute;caution</h3>
+            <p id="content_5">
+            À température ambiante, il se conserve une dizaine de jours, mais une fois coupé (ou cuit), il perd ses vitamines, il faut donc le consommer rapidement.<br/>
+Le citron est aussi photosensibilisant. Lors de l'application du jus de citron sur la peau, des taches peuvent apparaître suite à une exposition au soleil. Il existe deux réactions : la phototoxicité et la photoallergie.<br/>
+Le citron peut aussi causer des brûlures au niveau des muqueuses si son jus ou bien son huile essentielle est absorbé en trop grandes quantités. Les muqueuses brûlées peuvent être des muqueuses de l'œsophage, de l'estomac ou autres.<br/>
+Le jus de citron peut, consommé régulièrement, déminéraliser l'émail des dents.
+           	</p>
+            <p>Cr&eacute;dit : <a href="http://fr.wikipedia.org/wiki/Citron" rel="external">http://fr.wikipedia.org/wiki/Citron</a></p>
+        </div> 
+    </div>
+    
+    <!-- orange -->
+    <div data-role="page" id="orange" data-title="Cat&eacute;gorie fruits" data-theme="d">
+        <div data-role="content" data-theme="d">
+        	<h1 style="text-align:center; border-bottom:1px solid silver">L'Orange</h1>
+        	<h3 id="btn_1">&raquo; Description</h3>
+            <p id="content_1">
+            	<img class="popphoto" src="images/mini/m_orange.jpg" alt="orange">
+                L'orange est un agrume, fruit des orangers, des arbres de différentes espèces de la famille des Rutacées ou d'hybrides de ceux-ci. Il en existe donc plusieurs types, principalement issus de l'espèce citrus sinensis comme les oranges sanguines, et les oranges amères produites par le bigaradier.<br/>
+Comestible, elle est très riche en vitamine C. C'est le quatrième fruit le plus cultivé au monde.<br/>
+L'orange serait la pomme d'or du jardin des Hespérides.<br/>
+L'orange est, comme son nom l'indique, de couleur orange. Elle possède une peau épaisse et assez rugueuse. Elle se découpe en quartiers comme sa cousine la mandarine. L'orange est un fruit juteux, sucré, excitant.
+			</p>
+            
+           <h3 id="btn_2">&raquo; Utilisation</h3>
+            <p id="content_2">
+           	 Le fruit est consommé frais, mais il est aussi utilisé dans d'innombrables recettes comme le jus d'orange (54 % du marché des jus de fruits), les confitures, les pâtisseries, certains alcools, ou le canard à l'orange …
+            </p>
+            <h3 id="btn_3">&raquo; Conseil</h3>
+            <p id="content_3">
+            Les zestes, confitures ou marmelades faits avec des écorces d'oranges non issues de l'agriculture biologique (ou non traitées) peuvent contenir des quantités significatives de résidus de pesticides. Il faut donc être prudent. Les écorces attaquées par des champignons ou moisissures (moisissure bleue notamment) peuvent également contenir des mycotoxines.
+            </p>
+            <h3 id="btn_4">&raquo; Santé</h3>
+            <p id="content_4">
+			Pour une valeur nutritive de 100g d'orange crue, on peut se procurer de :<br/>
+            Vitamine C : 53.2mg <br/>
+            Vitamine B5 : 250 µg<br/>
+            Vitamine A : 225UI<br/>
+            Vitamine B1 : 87 µg<br/>
+            Vitamine B6 : 60 µg<br/>
+            Rétinol : 0 µg<br/>
+            Vitamine B2 :40 µg<br/>
+            Vitamine B9 : 0 µg<br/>
+            Vitamine E : 0,18 µg<br/>
+            Vitamine B3 : 282 µg<br/>
+            Vitamine B12 : 0 µg<br/>
+            Vitamine K : 0 µg
+            </p>
+            <h3 id="btn_5">&raquo; Pr&eacute;caution</h3>
+            <p id="content_5">
+            Les peaux d'oranges, mais aussi de citrons ou de pamplemousses, libèrent communément par pression ou par grattage des molécules de furocoumarines. Un contact prolongé ou un frottement avec la peau couplé à une exposition au soleil peut provoquer des rougeurs irritantes et des démangeaisons désagréables.
+           	</p>
+            <p>Cr&eacute;dit : <a href="http://fr.wikipedia.org/wiki/Orange_(fruit)" rel="external">http://fr.wikipedia.org/wiki/Orange</a></p>
+        </div> 
+    </div>
+    
+    <!-- noix de coco -->
+    <div data-role="page" id="coco" data-title="Cat&eacute;gorie fruits" data-theme="d">
+        <div data-role="content" data-theme="d">
+        	<h1 style="text-align:center; border-bottom:1px solid silver">Noix de coco</h1>
+        	<h3 id="btn_1">&raquo; Description</h3>
+            <p id="content_1">
+            	<img class="popphoto" src="images/mini/m_coco.jpg" alt="coco">
+                La noix de coco est le fruit du cocotier (cocos nucifera), un des représentants de la famille des palmiers ou arécacées. La fleur complète fait jusqu'à 30 centimètres de diamètre. L'extérieur du fruit est lisse et de couleur vert clair ou orange lorsque la fleur n'est pas mûre, tirant sur le brun et recouvert d'une épaisse couche de fibres ligneuses brunes entourant la noix à maturité et composé d'une solide coque sphérique qui protège une amande blanchâtre comestible.<br/>
+Inséré sous l'un des trois pores germinatifs, se trouve un embryon d'environ 5 mm de long. Un liquide opalescent et sucré occupe jusqu'aux trois quarts de la cavité interne. On l'appelle communément « eau de coco », le terme « lait de coco » étant de préférence réservé à un liquide blanchâtre extrait de l'amande râpée et pressée.
+
+			</p>
+            
+           	<h3 id="btn_2">&raquo; Utilisation</h3>
+            <p id="content_2">
+           	La noix de coco peut être consommée verte ou mûre. Lorsque le fruit est vert, l'eau qu'il contient est consommée comme boisson rafraîchissante.<br/> 
+Mûre, l'amande de noix de coco est comestible et sert d'ingrédient à de nombreuses recettes de cuisine tropicale en raison de son parfum caractéristique. Le germe de la noix de coco qui se développe en occupant l'espace laissé par l'eau de coco est également comestible. En petits morceaux, la pulpe de noix de coco peut accompagner une fondue au chocolat, râpée elle s'utilise dans les sauces au curry pour accompagner les poissons, l'agneau ou le poulet.<br/>
+Blanche ou grillée, elle s'utilise aussi fréquemment dans les desserts comme les biscuits congolais, les tuiles, les glaces, les cakes et quatre-quarts, et pour la décoration des gâteaux.<br/>
+L'huile de coco peut être consommée directement. Utilisée en petite quantité sur les cheveux, elle a un pouvoir revitalisant et brillant. En Inde, elle est utilisée en massages du cuir chevelu afin d'épaissir et de protéger les cheveux.<br/>
+Le lait de coco est très utilisé dans la cuisine haïtienne du sud de l'île. On l'utilise principalement pour préparer le riz (ou le blé, le petit mil ou la semoule de maïs) aux petits pois (ou aux haricots). On l'utilise également pour préparer le pot-au-feu (ou bouillon), pour faire de la bouillie aux céréales, dans les jus de cuisson de la viande. Certains l'utilisent même dans la préparation du jus au lait.
+</p>
+            </p>
+            
+            <h3 id="btn_3">&raquo; Conseil</h3>
+            <p id="content_3">
+            Une fois bien séchée, la pulpe se conserve dans un bocal hermétique à l'abri de la chaleur et de la lumière. <br/>
+Une noix de coco entière se conserve plusieurs semaines dans un endroit frais. L'amande se conserve quelques jours au frais, enveloppée dans un film alimentaire.
+            </p>
+            
+            <h3 id="btn_4">&raquo; Santé</h3>
+            <p id="content_4">
+			En Haïti, on conseille un mélange de jus de carotte, de jus de betterave rouge et du lait de coco contre l'anémie. <br/>
+La noix de coco est riche en potassium, fer, magnésium, phosphore, cuivre et zinc. L'huile de coco est riche en acides gras. L'eau de jeunes noix de coco fut utilisée, dans des conditions d'isolement ne permettant pas l'accès à des soins médicaux suffisants, comme solution sucrée en injection intraveineuse. C'est un liquide stérile, proche du profil d'électrolyte du plasma sanguin, et des solutions d'électrolytes produites par les laboratoires pharmaceutique.
+	 		</p>
+            
+            <h3 id="btn_5">&raquo; Pr&eacute;caution</h3>
+            <p id="content_5">
+            Contrairement à une idée reçue, les chutes de noix de coco ne sont pas responsables de 150 morts par an dans le monde. Cette statistique avait été inventée par une compagnie d'assurance à partir de bribes d'une étude médicale, puis reprise par les défenseurs des requins pour montrer que les noix de coco étaient plus dangereuses que les squales. Les chutes de noix de coco ont néanmoins engendré de graves blessures à la tête (coma, fracture du crâne).<br/> 
+Les caractéristiques de rigidité et de solidité de la noix de coco sont les plus proches de celles du crâne humain que l'on puisse trouver à l'état naturel chez un végétal.
+
+           	</p>
+            
+            <p>Cr&eacute;dit : <a href="http://fr.wikipedia.org/wiki/Noix_de_coco" rel="external">http://fr.wikipedia.org/wiki/Noix de coco</a></p>
+        </div> 
+    </div>
+    
+    <!-- ananas -->
+    <div data-role="page" id="ananas" data-title="Cat&eacute;gorie fruits" data-theme="d">
+        <div data-role="content" data-theme="d">
+        	<h1 style="text-align:center; border-bottom:1px solid silver">Ananas</h1>
+        	<h3 id="btn_1">&raquo; Description</h3>
+            <p id="content_1">
+            	<img class="popphoto" src="images/mini/m_ananas.jpg" alt="ananas">
+                L'ananas (ananas comosus) est une plante xerophyte, originaire d'Amérique du Sud (nord du Brésil), d'Amérique centrale, et des Caraïbes. Il est connu principalement pour son fruit comestible, qui est en réalité une infrutescence. Le fruit est allongé et peut avoir plus d'une trentaine de centimètres de longueur; son écorce, composée de motifs hexagonaux en écailles, est de couleur variable selon la variété. Sa chair, très juteuse, est également de couleur variable, généralement blanche ou jaune. Le mot ananas vient du tupi-guarani naná, qui signifie « parfum des parfums ». Le poids du fruit est proportionnel au poids du pied au moment de la floraison : l'art du planteur consiste donc à le faire « fleurir » au bon moment.
+			</p>
+            
+           	<h3 id="btn_2">&raquo; Utilisation</h3>
+            <p id="content_2">
+           	 Le jus d'ananas, du fait de ses vertus protéolytiques (endopeptidase, hydrolase, cystéine), peut être utilisé pour attendrir la viande. Les propriétés physicochimiques de ce fruit s'apparentent fortement à celles des agrumes, et les cuisiniers l'utilisent de la même façon, en accompagnement de viandes, de poisson ou en dessert.<br/>
+Au Congo, on en fait une bière locale.<br/>
+L'ananas peut être consommé cru ou accompagné d'autre fruit sous forme de plat de fruits<br/>
+Au Burundi, on fait aussi de la liqueur d'Ananas, appelée Bourasine.
+</p>
+            </p>
+            
+            <h3 id="btn_3">&raquo; Conseil</h3>
+            <p id="content_3">
+            Pour la même raison, son jus est à déconseiller dans les desserts comportant de la gélatine.<br/>
+L'ananas est très riche lorsqu'il est consommé frais .            
+            </p>
+            
+            <h3 id="btn_4">&raquo; Santé</h3>
+            <p id="content_4">
+			La tige de l'ananas possède une enzyme, la broméline, qui fait partie de la famille des protéases : elle a des effets cicatrisants, anti-inflammatoires et facilite la résorption des œdèmes. Elle est de plus utilisée pour faciliter la digestion.<br/>
+La broméline est aussi efficace contre la tendinite. Grâce à son pouvoir désinfiltrant, il est conseillé dans les régimes associés à la rétention d'eau. La broméline peut aussi servir pour attendrir la viande.<br/>
+Des vertus cosmétiques lui sont aussi attribuées, notamment pour faire diminuer l'acné : se frotter un morceau d'ananas sur la peau neutraliserait les acides graisseux, mais enlèverait aussi la pellicule graisseuse faisant partie l'épiderme. 
+
+            </p>
+            
+            <h3 id="btn_5">&raquo; Pr&eacute;caution</h3>
+            <p id="content_5">
+            L'ananas est une plante tropicale qui meurt si elle est exposée à une température inférieure à 10 °C : c'est pour cette raison qu'on ne doit pas conserver le fruit au réfrigérateur. Elle requiert un sol bien drainé, riche et acide. Un pH de l'ordre de 4,5 à 5,5 est important pour une bonne croissance : les maladies originaires du sol sont ainsi réduites. L'ananas n'apprécie pas du tout l'eau stagnante, d'où l'importance du drainage.
+           	</p>
+            
+            <p>Cr&eacute;dit : <a href="http://fr.wikipedia.org/wiki/Ananas" rel="external">http://fr.wikipedia.org/wiki/Ananas</a></p>
+        </div> 
+    </div>
+    
+    <!-- raisin -->
+    <div data-role="page" id="raisin" data-title="Cat&eacute;gorie fruits" data-theme="d">
+        <div data-role="content" data-theme="d">
+        	<h1 style="text-align:center; border-bottom:1px solid silver">Raisin</h1>
+        	<h3 id="btn_1">&raquo; Description</h3>
+            <p id="content_1">
+            	<img class="popphoto" src="images/mini/m_raisin.jpg" alt="raisin">
+                Le raisin est le fruit de la Vigne (Vitis). Le raisin de la vigne cultivée Vitis vinifera est un des fruits les plus cultivés au monde, avec 68 millions de tonnes produites en 2010, derrière les agrumes (124 millions), les bananes (102 millions) et les pommes (70 millions). Il se présente sous la forme de grappes composées de nombreux grains, qui sont sur le plan botanique des baies, de petite taille et de couleur claire, pour le raisin blanc (verdâtre, jaunâtre, jaune doré) ou plus foncée, pour le raisin rouge (mauve, rose ou noir-violet).
+			</p>
+            
+           	<h3 id="btn_2">&raquo; Utilisation</h3>
+            <p id="content_2">
+           	 L'utilisation du raisin est très varié, il est utilisé pour produire du vinaigre du vin, le pekmez (un sirop épais turque), faire du jus, consommer cru avec d'autre fruits ou sans, etc.            </p>
+            </p>
+            
+            <h3 id="btn_3">&raquo; Conseil</h3>
+            <p id="content_3">
+            Sa forte teneur en sucre peut entraîner une cristallisation du sucre avec le temps. Pour décristalliser un raisin, il suffit de le plonger dans un liquide (de l'alcool, du jus de fruit ou de l'eau bouillante), le temps que le sucre se dissolve.            
+            </p>
+            
+            <h3 id="btn_4">&raquo; Santé</h3>
+            <p id="content_4">
+			Riche en vitamines A, B et C, le raisin contient de nombreux oligo-éléments dans un équilibre parfaitement assimilable par l'organisme. Chaque grain de raisin est recouvert de pruine riche en levures.<br/>
+C'est un fruit assez énergétique avec 278 kJ (=65,6 kcal) pour 100 g.<br/>
+Le raisin est très pauvre en graisses saturées, cholestérol et sodium. C'est une très bonne source de vitamine C et vitamine K.
+            </p>
+            
+            <h3 id="btn_5">&raquo; Pr&eacute;caution</h3>
+            <p id="content_5">
+            L'exposition aux pesticides peut affecter la santé. 
+           	</p>
+            
+            <p>Cr&eacute;dit : <a href="http://fr.wikipedia.org/wiki/Raisin" rel="external">http://fr.wikipedia.org/wiki/Raisin</a></p>
+        </div> 
+    </div>
+    
+    
+    <!-- cerise -->
+    <div data-role="page" id="cerise" data-title="Cat&eacute;gorie fruits" data-theme="d">
+        <div data-role="content" data-theme="d">
+        	<h1 style="text-align:center; border-bottom:1px solid silver">Cerise</h1>
+        	<h3 id="btn_1">&raquo; Description</h3>
+            <p id="content_1">
+            	<img class="popphoto" src="images/mini/m_cerise.jpg" alt="cerise">
+                La cerise est le fruit comestible du cerisier. C'est, après la fraise, le plus populaire des petits fruits rouges. Il s'agit d'une drupe (petit fruit charnu à noyau), de forme sphérique, de couleur généralement rouge plus ou moins foncé, plus rarement jaune. Mûrs, ils ont une chair sucrée mais qui peut être amère, sans être acide. Avant d'être cultivées, ces merises sauvages étaient récoltées comme l'attestent les noyaux trouvés sur des sites néolithiques et de l'Âge du Bronze, en Europe centrale.
+			</p>
+            
+           	<h3 id="btn_2">&raquo; Utilisation</h3>
+            <p id="content_2">
+           	 Les cerises se consomment nature, au sirop (amarena), en confiture, en pâtisserie (tarte, clafoutis, mendiant, etc.), boisson, par distillation ou macération, pour la préparation du kirsch (Alsace), du guignolet (Anjou), du marasquin (ou maraschino en italien (Dalmatie), de la Kriek (Belgique) et de la Ginjinha au (Portugal) et même en tisane.
+            </p>
+            
+            <h3 id="btn_3">&raquo; Conseil</h3>
+            <p id="content_3">
+            Il est conseillé de garder la cerise au frais afin de conserver sa saveur.<br/>
+			Il est conseillé d'enlever les noyaux si on donne des cerises aux enfants.
+            </p>
+            
+            <h3 id="btn_4">&raquo; Santé</h3>
+            <p id="content_4">
+			La cerise douce est riche en sucre et assez énergétique. C'est une bonne source de fibres alimentaires et de vitamine C.<br/>
+            Les cerises fraîches détiennent le record en β-carotène, et sont très riches en vitamine A, vitamine E, et sont légèrement laxatives. Elles contiennent des sucres (15 g pour 100 g, dont le lévulose), de la pectine (utile pour les confitures), de la vitamine C.<br/>
+            Le potassium qu'elle contient lui donne des propriétés diurétiques et ses fibres stimulent le fonctionnement intestinal.<br/>
+            Leur teneur calorique reste raisonnable de 65 à 68 kcal pour 100 g.<br/>
+            Les pédoncules, ou queues de cerises, se préparent en décoction — peu agréable à boire — et sont utilisées notamment contre l'inflammation des voies urinaires, la cystite, la goutte et l'hydropisie.
+ 			</p>
+            
+            <p>Cr&eacute;dit : <a href="http://fr.wikipedia.org/wiki/Cerise" rel="external">http://fr.wikipedia.org/wiki/Cerise</a></p>
+        </div> 
+    </div>
+    
+    <!-- banane -->
+    <div data-role="page" id="banane" data-title="Cat&eacute;gorie fruits" data-theme="d">
+        <div data-role="content" data-theme="d">
+        	<h1 style="text-align:center; border-bottom:1px solid silver">Banane</h1>
+        	<h3 id="btn_1">&raquo; Description</h3>
+            <p id="content_1">
+            	<img class="popphoto" src="images/mini/m_banane.jpg" alt="banane">
+                La banane est le fruit ou la baie dérivant de l'inflorescence du bananier. Les bananes sont des fruits très généralement stériles issus de variétés domestiquées. Les fruits des bananiers sauvages et de quelques cultivars domestiques contiennent des graines. Les bananes sont généralement jaunes lorsqu'elles sont mûres et vertes quand elles ne le sont pas. <br/>
+            	La banane est un long fruit légèrement incurvé, souvent regroupé sur le bananier en grappes nommées « régimes ». La banane possède une peau de couleur jaune ou verte facile à détacher. La partie intérieure est une pulpe amylacée au goût sucré et à la consistance généralement fondante. 
+            </p>
+            
+           	<h3 id="btn_2">&raquo; Utilisation</h3>
+            <p id="content_2">
+           	La banane peut être consommée différente façon selon les variétés.<br/>
+- Banane dessert : La peau des fruits est généralement jaune ou rose et la chair est composée d'amidon hydrolysé et de sucres non cristallisables. Utiliser comme complément dans les jus de fruits, plat de fruits, ou consommer au petit-déjeuner.<br/>
+- Banane à cuire : Dans ce groupe, les principales sont les Banane plantain. Bien que tout aussi savoureuses crues que les premières, leur chair est plus ferme et il est plutôt d'usage de les consommer après cuisson car elles restent entières. <br/>
+- Banane à bière : Elles se caractérisent par une pulpe amère. Elles sont fermentées, produisant ainsi un « vin de banane », particulièrement apprécié dans la région des Grands Lacs en Afrique.
+</p>
+            
+            <h3 id="btn_4">&raquo; Santé</h3>
+            <p id="content_4">
+			La banane est un fruit très énergétique et très riche en potassium, dont elle peut couvrir les besoins quotidiens. Nutritive, facile à digérer, elle est riche en hydrates de carbone, phosphore, calcium, fer, vitamines A, B et C. Les bananes mûres sont riches en potassium et en sucres. Elles sont très nourrissantes (90 kcal/100 g) et très digestes en raison de leur faible teneur en graisses. <br/>
+Deux autres atouts majeurs font de la banane un élément alimentaire vital dans de nombreuses zones rurales pauvres : sa haute valeur nutritionnelle (riches en vitamines A, C et B6, par exemple), et sa production sans interruption pendant toute l'année.
+            </p>
+            
+            <p>Cr&eacute;dit : <a href="http://fr.wikipedia.org/wiki/Banane" rel="external">http://fr.wikipedia.org/wiki/Banane</a></p>
+        </div> 
+    </div>
+    
+    <!--/* mangue */-->
+    <div data-role="page" id="mangue" data-title="Cat&eacute;gorie fruits" data-theme="d">
+        
+        <div data-role="content" data-theme="d">
+        	<h1 style="text-align:center; border-bottom:1px solid silver">La mangue</h1>
+           	<h3 id="btn_1">&raquo; Description</h3>
+            <p id="content_1">
+            	<img class="popphoto" src="images/mini/m_mangue.jpg" alt="mangue">
+                La mangue est le fruit du manguier, grand arbre tropical de la famille des Anacardiaceae, originaire des forêts du Pakistan et de la Birmanie où il pousse encore à l'état sauvage.<br/>
+                Cet arbre, le Mangifera Indica, a un feuillage persistant, dense et vert foncé. La forme de son fruit est à la base du motif cachemire.<br/>
+                Son nom vient du malayalam manga, repris par le portugais manga.<br/>
+                La mangue est un fruit charnu, son poids varie de 300 g à 2 kg.<br/>
+                C'est une drupe, sa chair adhère à un noyau large, plat et glissant. Elle peut être ronde, ovale ou réniforme, et présente une écorce pouvant être de couleur jaune, verte ou rouge, qu'il est nécessaire d'enlever, car elle contient des substances irritantes et n'est donc pas comestible.<br/>
+                Sa chair est jaune foncé, onctueuse et sucrée, avec un goût de pêche et de fleur. Selon les variétés ou lorsque le fruit est trop mûr, la chair devient parfois filandreuse.
+            </p>
+            
+           	<h3 id="btn_2">&raquo; Utilisation</h3>
+            <p id="content_2">
+           	La mangue est utilisée dans des plats d'origine tropicale ou encore en jus de fruit pour des cocktails exotiques.<br/>
+            On peut la manger nature ou l'incorporer aux salades de fruits, aux céréales et aux sorbets. On peut la transformer en coulis ou faire de la confiture. Elle est habituellement utilisée, sous forme sèche et moulue, dans de nombreux plats de légumes de la cuisine du nord de l'Inde pour donner un peu d'aigreur où elle est appelée amchur (parfois écrit amchoor), am étant le mot hindi pour "mangue". Elle est délicieuse avec la volaille, le canard et le porc. Dans les Mascareignes, la mangue verte peut être utilisée pour un rougail épicé qui accompagnera les plats de viande.<br/>
+            Les chutneys à la mangue verte sont des condiments doux composés de mangue et d'épices variées. Ils accompagnent les plats au curry, la viande froide ou les fromages. Il existe plusieurs recettes de chutneys à la mangue, à la Jamaïque (recette), en Inde (recette).<br/>
+            La matière grasse issue du noyau de la mangue est incorporée à certains aliments tels le chocolat.
+ 			</p>
+            
+            <h3 id="btn_4">&raquo; Santé</h3>
+            <p id="content_4">
+            La mangue peut fournir la totalité de l'apport journalier recommandé en β-carotène, en fibres et en vitamine A et C, ce qui lui confère la palme de la protection contre l'action des radicaux libres.
+           	</p>
+            <h3 id="btn_5">&raquo; Pr&eacute;caution</h3>
+            <p id="content_5">
+           Le noyau peut causer des crampes sévères.
+           	</p>
+            <p>Cr&eacute;dit : <a href="http://fr.wikipedia.org/wiki/Mangue" rel="external">http://fr.wikipedia.org/wiki/Mangue</a></p>
+        </div> 
+    </div>
+    
+    <!--pomme-->
+     <div data-role="page" id="pomme" data-title="Cat&eacute;gorie fruits" data-theme="d">
+        <div data-role="content" data-theme="d">
+        	<h1 style="text-align:center; border-bottom:1px solid silver">La pomme</h1>
+        	<h3 id="btn_1">&raquo; Description</h3>
+            <p id="content_1">
+            	<img class="popphoto" src="images/mini/m_pomme.jpg" alt="pomme">
+                La pomme est le fruit du pommier. Elle est comestible et a un goût sucré ou acidulé selon les variétés. Elle fait partie des fruits les plus consommés dans le monde.<br/>
+La pomme est un fruit charnu, de forme quasi sphérique, déprimée au sommet et à la base, à pulpe homogène. Certaines variétés anciennes avaient des formes particulières, comme la pomme d'api, plutôt plate et de forme étoilée pentagonale, ou les pigeonnets, au contraire très allongés. La lemon pippin anglaise, ancienne pomme à cuire, avait la forme et la couleur d'un citron.<br/>
+Son poids est très variable selon les variétés et les conditions de végétation. Ses couleurs à maturité, se déclinent du vert « pomme » au rouge plus ou moins foncé en passant par une grande variété d'intermédiaires vert pâle, jaune, orangé ou de couleurs plus ou moins panachées.
+
+            </p>
+            
+           <h3 id="btn_2">&raquo; Utilisation</h3>
+            <p id="content_2">
+           	La pomme peut se manger crue ou cuite, en dessert ou en accompagnement de mets salés, en compote, en tarte, en gâteau, en gelée, en confiture, en pâte de fruit, plat de fruits ; on peut en faire du jus ou des boissons fermentées. Selon le mode de consommation le plus adapté à la variété, on parle de « pomme de table » (ou « pomme à dessert » ou « pomme à couteau »), de « pomme à cuire » ou de « pomme à cidre ».
+              </p>
+            <h3 id="btn_3">&raquo; Conseil</h3>
+            <p id="content_3">
+            Il est conseiller de croquer la pomme sans la peler, en ayant simplement pris soin cependant de la laver.<br/>
+Le stockage de longue durée entraîne une baisse du taux de vitamine d'environ 15 % et la cuisson provoque une destruction vitaminique partielle, de l'ordre de 25 à 30 % pour une cuisson de la pomme au four.
+
+            </p>
+            <h3 id="btn_4">&raquo; Santé</h3>
+            <p id="content_4">
+            Le profil nutritionnel de la pomme en fait un fruit tout à fait adapté aux sportifs. Les composantes de la pomme agissent de façon bénéfique sur l'organisme et ce, avant, pendant et après l'effort.<br/>
+C'est en vitamine C que la pomme est la mieux pourvue, dans la partie externe de la pulpe et plus encore dans la peau. Celle-ci renferme quatre à cinq fois plus de cette vitamine que le reste du fruit. <br/>
+Les autres vitamines contenues dans la pomme, B1, B2, PP, B5, B6, B9, provitamine A (β-carotène, 0,07 mg aux 100 g) et vitamine E (0,5 mg aux 100 g), contribuent également à faire de ce fruit un véritable abécédaire de la forme.
+
+           	</p>
+            <h3 id="btn_5">&raquo; Pr&eacute;caution</h3>
+            <p id="content_5">
+           La pomme peut être attaquée par diverses maladies des pommiers. Il peut s'agir de maladies bactériennes, virales, ou parasitaires.
+           	</p>
+            <p>Cr&eacute;dit : <a href="http://fr.wikipedia.org/wiki/Pomme" rel="external">http://fr.wikipedia.org/wiki/Pomme</a></p>
+        </div> 
+    </div>
+    
+    <!---------------------------------->
+    <!---------- Santé ----------------->
+    <!---------------------------------->
+    <div data-role="page" id="alzheimer" data-title="Cat&eacute;gorie fruits" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catSoin" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>Alzeimer</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#citron" rel="external">Citron</a></li>
+            </ul>
+        </div> 
+    </div>
+    <div data-role="page" id="tendinite" data-title="Cat&eacute;gorie fruits" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catSoin" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>Tendinite</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#ananas" rel="external">Ananas</a></li>
+            </ul>
+        </div> 
+    </div>
+    <div data-role="page" id="anemie" data-title="Cat&eacute;gorie fruits" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catSoin" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>Anemie</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#coco" rel="external">Noix de coco</a></li>
+            </ul>
+        </div> 
+    </div>
+    <div data-role="page" id="acne" data-title="Cat&eacute;gorie fruits" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catSoin" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>Acné</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#acne" rel="external">Acné</a></li>
+            </ul>
+        </div> 
+    </div>
+    <div data-role="page" id="digestion" data-title="Cat&eacute;gorie fruits" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catSoin" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>Problème de digestion</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#ananas" rel="external">Ananas</a></li>
+            </ul>
+        </div> 
+    </div>
+	<div data-role="page" id="cure_de_main" data-title="Cat&eacute;gorie fruits" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catSoin" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>Cure de main</h1>
+        </div>
+        <div data-role="content" data-theme="d">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#citron" rel="external">Citron</a></li>
+            </ul>
+        </div> 
+    </div>
+    <div data-role="page" id="mal_de_gorge" data-title="Cat&eacute;gorie fruits" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catSoin" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>Mal de gorge</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#citron" rel="external">Citron</a></li>
+            </ul>
+        </div> 
+    </div>
+    <div data-role="page" id="voix_enrouee" data-title="Cat&eacute;gorie fruits" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catSoin" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>Voix enrouée</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#citron" rel="external">Citron</a></li>
+            </ul>
+        </div> 
+    </div>
+    
+    <!------------------------------------->
+    <!-------------- Vitamine ------------->
+    <!------------------------------------->
+     <div data-role="page" id="vitab1" data-title="Cat&eacute;gorie vitamines" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catVitamine" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>Vitamine B1</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#orange" rel="external">Orange</a></li>
+                <li><a href="#pomme" rel="external">Pomme</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="vitab2" data-title="Cat&eacute;gorie vitamines" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catVitamine" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>Vitamine B2</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#orange" rel="external">Orange</a></li>
+                <li><a href="#pomme" rel="external">Pomme</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="vitab3" data-title="Cat&eacute;gorie vitamines" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catVitamine" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>Vitamine B3</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#orange" rel="external">Orange</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="vitab5" data-title="Cat&eacute;gorie vitamines" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catVitamine" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>Vitamine B5</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#orange" rel="external">Orange</a></li>
+                <li><a href="#pomme" rel="external">Pomme</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="vitab6" data-title="Cat&eacute;gorie vitamines" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catVitamine" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>Vitamine B6</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#banane" rel="external">Banane</a></li>
+                <li><a href="#orange" rel="external">Orange</a></li>
+                <li><a href="#pomme" rel="external">Pomme</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="vitab" data-title="Cat&eacute;gorie vitamines" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catVitamine" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>Vitamine B</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#banane" rel="external">Banane</a></li>
+                <li><a href="#raisin" rel="external">Raisin</a></li>                
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="vitak" data-title="Cat&eacute;gorie vitamines" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catVitamine" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>Vitamine K</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#orange" rel="external">Orange</a></li>
+                <li><a href="#raisin" rel="external">Raisin</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div data-role="page" id="vitab12" data-title="Cat&eacute;gorie vitamines" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catVitamine" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>Vitamine B12</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#orange" rel="external">Orange</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="vitae" data-title="Cat&eacute;gorie vitamines" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catVitamine" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>Vitamine E</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#cerise" rel="external">Cerise</a></li>
+                <li><a href="#orange" rel="external">Orange</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="vitab9" data-title="Cat&eacute;gorie vitamines" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catVitamine" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>Vitamine B9</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#orange" rel="external">Orange</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="vitapp" data-title="Cat&eacute;gorie vitamines" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catVitamine" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>Vitamine PP</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#pomme" rel="external">Pomme</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="carotene" data-title="Cat&eacute;gorie vitamines" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catVitamine" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>β-carotène</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#cerise" rel="external">Cerise</a></li>
+                <li><a href="#mangue" rel="external">La Mangue</a></li>
+                <li><a href="#pomme" rel="external">Pomme</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="vitaa" data-title="Cat&eacute;gorie vitamines" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catVitamine" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>Vitamine A</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#banane" rel="external">Banane</a></li> 
+                <li><a href="#cerise" rel="external">Cerise</a></li>
+                <li><a href="#mangue" rel="external">Mangue</a></li>
+                <li><a href="#orange" rel="external">Orange</a></li>
+                <li><a href="#raisin" rel="external">Raisin</a></li>                
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="vitac" data-title="Cat&eacute;gorie vitamines" data-theme="d">
+        <div data-role="header" data-theme="b">
+            <a href="index.html#catVitamine" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">back</a>
+            <h1>Vitamine C</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Saisir le nom de votre fruit">
+                <li><a href="#banane" rel="external">Banane</a></li>
+                <li><a href="#cerise" rel="external">Cerise</a></li>
+                <li><a href="#citron" rel="external">Citron</a></li>
+                <li><a href="#mangue" rel="external">Mangue</a></li>
+                <li><a href="#orange" rel="external">Orange</a></li>
+                <li><a href="#pomme" rel="external">Pomme</a></li>
+                <li><a href="#raisin" rel="external">Raisin</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
